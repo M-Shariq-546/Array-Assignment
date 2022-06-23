@@ -27,10 +27,10 @@ class Array
 };
 int main()
 {
-	Array A , B;
+	Array A;
 	A.in();
 	A.out();
-	B.in();
-	B.out();
+	cout<<"\n";
+	Array B(A); //Through Copy Constructor
 	return 0;
 }
