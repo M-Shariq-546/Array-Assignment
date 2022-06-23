@@ -14,30 +14,30 @@ class array{
 			}
 			void mode()
 			{
-				int number = arr[5];
-				int mode = number;
-				int count = 1;
-				int countMode = 1;
+				int number = arr[5]; //Assign the array to blank int variable 
+				int mode = number; //Giving number to mode to display as result 
+				int count = 1;//for occurance count
+				int countMode = 1; // initialize the calculation with 1
 
 				for (int i=0; i<5; i++)
 				{
       if (arr[i] == number) 
-      { // count occurrences of the current number
+      { // count is for calculating occurrences of the current number
          ++count;
       }
       else
-      { // now this is a different number
+      { // now this is for a  different number
             if (count > countMode) 
             {
-                  countMode = count; // mode is the biggest ocurrences
+                  countMode = count; // mode is the most repeated value
                   mode = number;
             }
-           count = 1; // reset count for the new number
+           count = 1; // reset count for taking new number
            number = arr[i];
   					}
 					}
 
-						cout << "The Mode of the array is : " << mode << endl;
+						cout << "The Mode of our array is : " << mode << endl;
 }
 };
 int main()
