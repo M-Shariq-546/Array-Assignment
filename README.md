@@ -1,2 +1,3 @@
 # Array-Assignment
-Array Assignmet in C++
+Array Assignmet majorly in C++ and minorly in Python
+
