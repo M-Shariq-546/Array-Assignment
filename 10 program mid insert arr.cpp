@@ -15,6 +15,7 @@ class array{
 				cout<<"Enter the elements of the array : "<<endl;
 				for(i=0 ;i<size; i++)
 				{
+					cout<<"No . "<<(i+1)<<" : ";
 					cin>>arr[i];
 				}
 			}
