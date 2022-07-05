@@ -1,37 +1,34 @@
+//Program Taking value randomly and then Insert the value at start
 #include<iostream>
-#include<time.h>
 using namespace std;
-class array{
-	private:
-		int arr[10];
-		int rIndex;
-		int n;
-		public:
-			void in()
-			{
-				cout<<"Enter the size of the array : ";
-				cin>>n;
-				cout<<"Enter the elements of the array : "<<endl;
-				for(int i=0 ;i<n; i++)
-				{
-					cout<<"No . "<<(i+1)<<" : ";
-					cin>>arr[i];
-				}
-			}
-			void randIndex()
-			{
-				srand(time(NULL));
-				
-				rIndex = rand() % n;
-				
-				cout<<"The Random index is : "<<arr[rIndex];
-				
-			}				
-};
+void insertAtPos(int A[] , int s , int pos ,int val)
+{	
+	if(A[pos] == 0)
+	{
+		A[pos] = val;
+	for(int i=0 ; i<s; i++)
+	{
+		cout<<A[i]<<endl;
+	}
+	}
+}
 int main()
 {
-	array A ;
-	A.in();
-	A.randIndex();
+	int a[100];
+	const int size = 31;
+	for(int i=0 ;i<size ; i++)
+	{
+		a[i] = 0;
+	}
+	for(int i=0 ; i<size ; i++)
+	{
+		a[5]  = 5;
+		a[10] = 6;
+		a[15] = 7;
+		a[20] = 8;
+		a[25] = 9;
+		a[30] = 10;
+	}
+	insertAtPos(a , size , 7 , 546);
 	return 0;
 }
