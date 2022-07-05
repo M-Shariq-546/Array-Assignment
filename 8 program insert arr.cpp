@@ -1,34 +1,36 @@
+//Program Taking value randomly and then Insert the value at start
 #include<iostream>
 using namespace std;
-class array{
-	private:
-		int arr[6];
-		int num;
-		int i;
-		public:
-			void in()
-			{
-				cout<<"Enter the elements of the array : "<<endl;
-				for(i=0 ;i< 5; i++)
-				{
-					cin>>arr[i];
-				}
-			}
-			void insertArr()
-			{
-				cout<<"Enter the Number to insert in array : ";
-				cin>>num;
-				arr[0] = num;
-				for(i=0 ; i<6 ; i++)
-				{
-					cout<<arr[i]<<"\t";
-				}
-			}
-};
+void insertAtBeg(int A[] , int s ,int val)
+{	
+	if(A[0] != 0)
+	{
+		A[0] = val;
+		cout<<A[0]<<endl;
+	}
+	for(int i=0 ; i<s; i++)
+	{
+		cout<<A[i]<<endl;
+	}
+}
 int main()
 {
-	array A ;
-	A.in();
-	A.insertArr();
+	int a[100];
+	int size;
+	cout<<"Enter the size : ";
+	cin>>size;
+	for(int i=0 ;i<size ; i++)
+	{
+		a[i] = 0;
+	}
+	for(int i=0 ; i<size ; i++)
+	{
+		a[0] = 5;
+		a[2] = 7;
+		a[4] = 7;
+		a[5] = 9;
+	}
+	insertAtBeg(a , size , 546);
+
 	return 0;
 }
